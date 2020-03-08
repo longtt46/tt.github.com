@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="sss">
+    <button id="btn">计算</button>
+    <h1 id="resultbox"></h1>
+    <script>
+        var resultbox = document.getElementById('resultbox');
+        var sss = document.getElementById('sss');
+        var btn = document.getElementById('btn');
+        btn.onclick = function () {
+            var s = Number(sss.value);
+            var a = 3 * Math.sqrt(3) * Math.pow(s, 2) / 2
+            resultbox.innerHTML =Math.floor (a);
+            console.log(a);
+        };
+
+    </script>
+</body>
+
+</html>

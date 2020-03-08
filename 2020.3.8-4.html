@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    成绩优秀的列子
+    <input type="text" id="kuang">
+    <button id="btn">确定</button>
+    <h1 id="culetion"></h1>
+    <script>
+        var kuang = document.getElementById('kuang');
+        var btn = document.getElementById('btn');
+        btn.onclick = function () {
+            var cj = Number(kuang.value);
+            if (cj >= 85) {
+                alert('优秀');
+            }
+            else if (cj >= 75) {
+                alert('良好')
+            }
+            else if (cj >= 60) {
+                alert('及格')
+            }
+
+            else {
+                alert('不及格');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
